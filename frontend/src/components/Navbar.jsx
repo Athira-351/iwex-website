@@ -14,15 +14,16 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isHome = window.location.pathname === "/";  // Check if current page is Home
+  const transparentMode = isHome && !scrolled;  // Determine if we need transparent style
+
   return (
     <header>
       <nav
-        className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-          scrolled ? "bg-white shadow-md" : "bg-transparent"
-        }`}
+        className={`fixed w-full top-0 z-50 transition-all duration-300 ${transparentMode ? "bg-transparent" : "bg-white shadow-md"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
-          {/* Logo */}
           <div>
             <img src={logo} alt="Logo" className="h-12 w-auto" />
           </div>
@@ -31,12 +32,11 @@ const Navbar = () => {
           <ul className="hidden md:flex space-x-6 font-medium">
             <li>
               <a
-                href="#about"
-                className={`${
-                  scrolled
-                    ? "text-gray-700 hover:text-black"
-                    : "text-white hover:text-gray-200"
-                }`}
+                href="/about"
+                className={`${transparentMode
+                    ? "text-white hover:text-gray-200"
+                    : "text-gray-700 hover:text-black"
+                  }`}
               >
                 About Us
               </a>
@@ -44,11 +44,10 @@ const Navbar = () => {
             <li>
               <a
                 href="#products"
-                className={`${
-                  scrolled
-                    ? "text-gray-700 hover:text-black"
-                    : "text-white hover:text-gray-200"
-                }`}
+                className={`${transparentMode
+                    ? "text-white hover:text-gray-200"
+                    : "text-gray-700 hover:text-black"
+                  }`}
               >
                 Products
               </a>
@@ -56,11 +55,10 @@ const Navbar = () => {
             <li>
               <a
                 href="#training"
-                className={`${
-                  scrolled
-                    ? "text-gray-700 hover:text-black"
-                    : "text-white hover:text-gray-200"
-                }`}
+                className={`${transparentMode
+                    ? "text-white hover:text-gray-200"
+                    : "text-gray-700 hover:text-black"
+                  }`}
               >
                 Training
               </a>
@@ -69,11 +67,10 @@ const Navbar = () => {
             {/* Career Dropdown */}
             <div className="relative group">
               <button
-                className={`${
-                  scrolled
-                    ? "text-gray-700 hover:text-black"
-                    : "text-white hover:text-gray-200"
-                } font-medium focus:outline-none`}
+                className={`${transparentMode
+                    ? "text-white hover:text-gray-200"
+                    : "text-gray-700 hover:text-black"
+                  } font-medium focus:outline-none`}
               >
                 Career
               </button>
@@ -96,11 +93,10 @@ const Navbar = () => {
             {/* Contact Dropdown */}
             <div className="relative group">
               <button
-                className={`${
-                  scrolled
-                    ? "text-gray-700 hover:text-black"
-                    : "text-white hover:text-gray-200"
-                } font-medium focus:outline-none`}
+                className={`${transparentMode
+                    ? "text-white hover:text-gray-200"
+                    : "text-gray-700 hover:text-black"
+                  } font-medium focus:outline-none`}
               >
                 Contact Us
               </button>
@@ -135,11 +131,10 @@ const Navbar = () => {
             <li>
               <a
                 href="#blogs"
-                className={`${
-                  scrolled
-                    ? "text-gray-700 hover:text-black"
-                    : "text-white hover:text-gray-200"
-                }`}
+                className={`${transparentMode
+                    ? "text-white hover:text-gray-200"
+                    : "text-gray-700 hover:text-black"
+                  }`}
               >
                 Blogs
               </a>
@@ -147,11 +142,10 @@ const Navbar = () => {
             <li>
               <a
                 href="#login"
-                className={`${
-                  scrolled
-                    ? "text-gray-700 hover:text-white border hover:bg-blue-400 border-blue-400 backdrop-blur-sm px-8 py-2 rounded-full font-semibold transition-all"
-                    : "text-white hover:text-gray-200 bg-white/10 border border-white/30 backdrop-blur-sm px-8 py-2 rounded-full font-semibold hover:bg-white/20 transition-all"
-                }`}
+                className={`${transparentMode
+                    ? "text-white hover:text-gray-200 bg-white/10 border border-white/30 backdrop-blur-sm px-8 py-2 rounded-full font-semibold hover:bg-white/20 transition-all"
+                    : "text-gray-700 hover:text-white border hover:bg-blue-400 border-blue-400 backdrop-blur-sm px-8 py-2 rounded-full font-semibold transition-all"
+                  }`}
               >
                 <button>Login</button>
               </a>
@@ -162,9 +156,8 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className={`${
-                scrolled ? "text-gray-700" : "text-white"
-              } text-2xl`}
+              className={`${transparentMode ? "text-white" : "text-gray-700"
+                } text-2xl`}
             >
               {menuOpen ? <FiX /> : <FiMenu />}
             </button>
@@ -173,14 +166,13 @@ const Navbar = () => {
 
         {/* Mobile Sidebar */}
         <div
-          className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 z-50 ${
-            menuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+          className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 z-50 ${menuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
         >
           <div className="p-6">
             <ul className="space-y-6 font-medium text-gray-700">
               <li>
-                <a href="#about" onClick={() => setMenuOpen(false)}>
+                <a href="/about" onClick={() => setMenuOpen(false)}>
                   About Us
                 </a>
               </li>
