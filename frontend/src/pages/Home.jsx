@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import WhatWeDid from '../sections/WhatWeDid';
-import Services from '../sections/Services';
-import CustomerReviews from '../sections/CustomerReviews';
-import Technologies from '../sections/Technologies';
-import TechShowcase from '../sections/TechShowcase';
-import StepsSection from '../sections/StepsSection';
+import WhatWeDid from '../sections/home/WhatWeDid';
+import Services from '../sections/home/Services';
+import CustomerReviews from '../sections/home/CustomerReviews';
+import Technologies from '../sections/home/Technologies';
+import TechShowcase from '../sections/home/TechShowcase';
+import StepsSection from '../sections/home/StepsSection';
 import StickySection from '../sections/StickySection';
 
 const Home = () => {
