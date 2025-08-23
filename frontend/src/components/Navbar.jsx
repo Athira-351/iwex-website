@@ -43,7 +43,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#products"
+                href="/products"
                 className={`${
                   scrolled
                     ? "text-gray-700 hover:text-black"
@@ -185,7 +185,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#products" onClick={() => setMenuOpen(false)}>
+                <a href="/products" onClick={() => setMenuOpen(false)}>
                   Products
                 </a>
               </li>
