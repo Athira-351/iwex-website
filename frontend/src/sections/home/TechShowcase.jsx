@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight } from "lucide-react";
-import dashboard from "../assets/dashboard.png";
-import kanban from "../assets/Kanban.png";
-import pos from "../assets/POS.png";
-import userManagement from "../assets/user-management.png";
-import projects from "../assets/Projects.png";
-import orders from "../assets/sales-order.png";
+import dashboard from "../../assets/dashboard.png";
+import kanban from "../../assets/Kanban.png";
+import pos from "../../assets/POS.png";
+import userManagement from "../../assets/user-management.png";
+import projects from "../../assets/Projects.png";
+import orders from "../../assets/sales-order.png";
 
 const FeatureSection = () => {
   const features = [
