@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import pythonLogo from "../assets/python.png";
-import djangoLogo from "../assets/django.png";
-import reactLogo from "../assets/react.png";
-import postgresqlLogo from "../assets/frappe.png";
-import mysqlLogo from "../assets/mysql.png";
-import erpnextLogo from "../assets/erpnext.png";
-import php from "../assets/php.png";
+import pythonLogo from "../../assets/python.png";
+import djangoLogo from "../../assets/django.png";
+import reactLogo from "../../assets/react.png";
+import postgresqlLogo from "../../assets/frappe.png";
+import mysqlLogo from "../../assets/mysql.png";
+import erpnextLogo from "../../assets/erpnext.png";
+import php from "../../assets/php.png";
 
 const floatAnimation = {
   initial: { y: 0 },

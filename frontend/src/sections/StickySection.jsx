@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "./Hero";
-import About from "./About";
+import Hero from "./home/Hero";
+import About from "./home/About";
 
 const StickySection = () => {
   return (
