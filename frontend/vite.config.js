@@ -6,5 +6,5 @@ import tailwindPlugin from '@tailwindcss/vite';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), tailwindPlugin()],
-  base: '/iwex-website/',
+  base: '/',
 })

@@ -9,16 +9,14 @@ import Blog from "./pages/Blog";
 
 export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/career" element={<Career />} />
-        <Route path="/career/:id" element={<JobDetails />} />
-        <Route path="/training" element={<Training />} />
-        <Route path="/blogs" element={<Blog />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<AboutUs />} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/career" element={<Career />} />
+      <Route path="/career/:id" element={<JobDetails />} />
+      <Route path="/training" element={<Training />} />
+      <Route path="/blogs" element={<Blog />} />
+    </Routes>
   );
 }
