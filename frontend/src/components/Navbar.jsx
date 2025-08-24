@@ -54,7 +54,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#training"
+                href="/training"
                 className={`${transparentMode
                     ? "text-white hover:text-gray-200"
                     : "text-gray-700 hover:text-black"
@@ -193,7 +193,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#training" onClick={() => setMenuOpen(false)}>
+                <a href="/training" onClick={() => setMenuOpen(false)}>
                   Training
                 </a>
               </li>

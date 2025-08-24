@@ -4,6 +4,7 @@ import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products";
 import Career from "./pages/Career";
 import JobDetails from "./pages/JobDetails";
+import Training from "./pages/Training";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/career" element={<Career />} />
         <Route path="/career/:id" element={<JobDetails />} />
+        <Route path="/training" element={<Training />} />
       </Routes>
     </Router>
   );
