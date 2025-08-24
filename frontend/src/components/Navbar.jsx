@@ -63,9 +63,20 @@ const Navbar = () => {
                 Training
               </a>
             </li>
+            <li>
+              <a
+                href="/career"
+                className={`${transparentMode
+                    ? "text-white hover:text-gray-200"
+                    : "text-gray-700 hover:text-black"
+                  }`}
+              >
+                Career
+              </a>
+            </li>
 
             {/* Career Dropdown */}
-            <div className="relative group">
+            {/* <div className="relative group">
               <button
                 className={`${transparentMode
                     ? "text-white hover:text-gray-200"
@@ -88,7 +99,7 @@ const Navbar = () => {
                   Frontend Developer
                 </a>
               </div>
-            </div>
+            </div> */}
 
             {/* Contact Dropdown */}
             <div className="relative group">
@@ -187,7 +198,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#career" onClick={() => setMenuOpen(false)}>
+                <a href="/career" onClick={() => setMenuOpen(false)}>
                   Career
                 </a>
               </li>
