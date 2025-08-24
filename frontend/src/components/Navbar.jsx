@@ -141,7 +141,7 @@ const Navbar = () => {
 
             <li>
               <a
-                href="#blogs"
+                href="/blogs"
                 className={`${transparentMode
                     ? "text-white hover:text-gray-200"
                     : "text-gray-700 hover:text-black"
@@ -208,7 +208,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#blogs" onClick={() => setMenuOpen(false)}>
+                <a href="/blogs" onClick={() => setMenuOpen(false)}>
                   Blogs
                 </a>
               </li>

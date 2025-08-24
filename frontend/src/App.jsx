@@ -5,6 +5,7 @@ import Products from "./pages/Products";
 import Career from "./pages/Career";
 import JobDetails from "./pages/JobDetails";
 import Training from "./pages/Training";
+import Blog from "./pages/Blog";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/career" element={<Career />} />
         <Route path="/career/:id" element={<JobDetails />} />
         <Route path="/training" element={<Training />} />
+        <Route path="/blogs" element={<Blog />} />
       </Routes>
     </Router>
   );
