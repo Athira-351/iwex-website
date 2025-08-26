@@ -6,6 +6,7 @@ import Career from "./pages/Career";
 import JobDetails from "./pages/JobDetails";
 import Training from "./pages/Training";
 import Blog from "./pages/Blog";
+import Enquiry from "./pages/Enquiry";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Route path="/career/:id" element={<JobDetails />} />
       <Route path="/training" element={<Training />} />
       <Route path="/blogs" element={<Blog />} />
+      <Route path="/enquiry" element={<Enquiry />} />
     </Routes>
   );
 }

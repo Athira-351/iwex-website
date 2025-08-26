@@ -113,7 +113,7 @@ const Navbar = () => {
               </button>
               <div className="absolute left-0 mt-2 w-44 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 transition-all duration-200 z-50">
                 <a
-                  href="#enquiry"
+                  href="/enquiry"
                   className="block px-4 py-2 text-gray-700 hover:bg-blue-100 text-sm"
                 >
                   Enquiry
