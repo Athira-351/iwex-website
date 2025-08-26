@@ -7,6 +7,7 @@ import JobDetails from "./pages/JobDetails";
 import Training from "./pages/Training";
 import Blog from "./pages/Blog";
 import Enquiry from "./pages/Enquiry";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Route path="/training" element={<Training />} />
       <Route path="/blogs" element={<Blog />} />
       <Route path="/enquiry" element={<Enquiry />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
     </Routes>
   );
 }
