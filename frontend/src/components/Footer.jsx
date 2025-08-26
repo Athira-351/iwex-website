@@ -23,20 +23,20 @@ const Footer = () => {
           <h2 className="text-xl font-semibold mb-5 border-b border-gray-700 pb-2 tracking-wide">Quick Links</h2>
           <ul className="space-y-3 text-sm text-gray-300">
             {[
-              "Products",
-              "Training",
-              "Career",
-              "Contact Us",
-              "Enquiry",
-              "Tickets",
-              "Privacy Policy",
-              "FAQ",
-              "Blogs",
-              "Login",
-              "Get a Free Demo",
+              { name: "Products", href: "/products" },
+              { name: "Training", href: "/training" },
+              { name: "Career", href: "/career" },
+              { name: "Contact Us", href: "/enquiry" },
+              { name: "Enquiry", href: "/enquiry" },
+              { name: "Tickets", href: "/tickets" },
+              { name: "Privacy Policy", href: "/privacy-policy" },
+              { name: "FAQ", href: "/faq" },
+              { name: "Blogs", href: "/blogs" },
+              { name: "Login", href: "/login" },
+              { name: "Get a Free Demo", href: "/demo" },
             ].map((link) => (
-              <li key={link}>
-                <a href="#" className="hover:text-white transition-colors duration-200">{link}</a>
+              <li key={link.name}>
+                <a href={link.href} className="hover:text-white transition-colors duration-200">{link.name}</a>
               </li>
             ))}
           </ul>
