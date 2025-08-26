@@ -125,7 +125,7 @@ const Navbar = () => {
                   Tickets
                 </a>
                 <a
-                  href="#privacy"
+                  href="/privacy-policy"
                   className="block px-4 py-2 text-gray-700 hover:bg-blue-100 text-sm"
                 >
                   Privacy Policy
